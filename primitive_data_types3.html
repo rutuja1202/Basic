@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+
+</head>
+<body>
+    <!--
+    1.Number
+    2.String
+    3.Boolean
+    4.Undefined
+    5.Null
+    6.Bigint
+    7.Symbol
+    -->
+    
+    <script>
+        //Number
+        let n1=101;
+        console.log(typeof n1);
+        console.log(n1+30);
+        console.log("********************************************");
+
+        //String
+        var s2="rutuja"
+        console.log(typeof s2);
+        console.log(s2);
+        console.log("********************************************");
+
+        //Boolean
+        let b2=true;
+        console.log(typeof b2);
+        console.log(b2);
+        console.log("********************************************");
+
+        //Undefined
+        let und;
+        console.log(und);
+        console.log("********************************************");
+
+        //Null
+        let n2=null;
+        console.log(typeof n2);
+        console.log(n2);
+        console.log("********************************************");
+
+        //Bigint
+        let bg1=9876543212345678909632125689986447672527939376553689;
+        console.log(bg1);
+        console.log(bg1+100000000);
+        console.log(typeof bg1);
+
+        let bg2=62842648748726738101987875391519580105815717510n;
+        console.log(bg2);
+        console.log(typeof bg2); 
+        console.log(bg2 + 111n);
+        console.log("********************************************");
+
+        //Symbol
+        let sym1=Symbol("RRP");
+        console.log(sym1)
+        console.log(typeof sym1);
+
+        let sym2=Symbol("RRP");
+        console.log(sym2)
+        console.log(typeof sym2);
+
+        console.log(sym1 === sym2);
+        console.log(sym1 == sym2);
+
+        let uniId = Symbol("id");
+
+        let obj = {
+            pass :123,
+            name:"PQR",
+            balance:667263
+
+        };
+        
+        obj[uniId]=123;
+       console.log(obj);
+
+        console.log(obj[uniId]);
+    </script>
+</body>
+</html>
