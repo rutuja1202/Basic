@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    
+    <script>
+
+        //1.Use of multiple line of document.write()
+        let name = prompt("Enter user name ");
+        let age = +prompt("Enter your age");
+
+        // document.write("<h1> Hello ");
+        //document.write(  name );
+        //document.write(" Good Morning !<br>");
+        //document.write( "You are " );
+        //document.write( age );
+        //document.write(" years old </h1>" );
+
+        //2.Use of concatenation opretors(+)
+
+        //document.write("<h1> Hello " + name + " Good Morning ! " + " You are " + age + " years old. </h1>")
+
+        //Templete literal
+        document.write(` 
+        <h1> Hello ${name} Good Morning ! You are ${age} years old.</h1>
+        `);
+        document.write(
+            `<h2>"My friend said ,let's go sunday for breakfast!"</h2>
+            `)
+        </script>
+</body>
+</html>
