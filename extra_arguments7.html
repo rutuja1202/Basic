@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Extra Arguments</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <script>
+        function hello(name , role , ...friends)
+        {
+            console.log(`Hello ${name}. You are a ${role}`);
+           // console.log(arguments);
+           console.log(`${name}'s friends are ${friends}`);
+      }
+
+      hello("Rutuja" , 
+      "Frontend Developer",
+      "Mariya",
+      "Ruhi",
+      "Advika");
+      console.log("********************");
+
+      function myNums(...favNumber){
+        console.log(`My favorite numbers:${favNumber}`);
+      }
+
+      myNums(1 , 3, 5);
+    </script>
+</body>
+</html>
